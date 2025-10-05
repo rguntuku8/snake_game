@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <div class="header-left">
+                <div class="apple-icon">🍎</div>
+                <span id="score" class="score-display">0</span>
+            </div>
+            <div class="header-center">
+                <div class="trophy-icon">🏆</div>
+                <span id="highScore" class="high-score-display">2</span>
+            </div>
+            <div class="header-right">
+                <button class="control-btn fullscreen-btn">⛶</button>
+                <button class="control-btn sound-btn">🔊</button>
+                <button class="control-btn close-btn">✕</button>
+            </div>
+        </header>
+        
+        <div class="game-area">
+            <canvas id="gameCanvas" width="480" height="480"></canvas>
+            <div id="gameOverScreen" class="game-over-screen hidden">
+                <h2>Game Over!</h2>
+                <p>Final Score: <span id="finalScore">0</span></p>
+                <button id="restartBtn" class="restart-btn">Play Again</button>
+                <p style="font-size: 0.9rem; margin-top: 15px; opacity: 0.8;">Press SPACE/ENTER or click the button</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
